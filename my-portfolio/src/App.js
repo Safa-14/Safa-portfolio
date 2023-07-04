@@ -3,6 +3,7 @@ import Nav from "./components/sidenav/Sidenav";
 import Header from "./components/header/Header";
 import About from "./components/about/About";
 import './App.css';
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Nav />
       <Header />
       <About />
+      <Contact />
     </>
   );
 }

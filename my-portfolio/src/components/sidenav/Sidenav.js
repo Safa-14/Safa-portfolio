@@ -75,7 +75,7 @@ function Sidenav() {
 
         <ul>
           <li>
-            <a href="www.linkedin.com/in/safa-bouhlel" target="_blank">
+            <a href="https://www.linkedin.com/in/safa-bouhlel/">
               <BsLinkedin />
             </a>
           </li>

@@ -6,7 +6,7 @@ import Image from '../../assets/img/me.png'
 
 function Header() {
   return (
-    <section class="home" id="home">
+    <section className="home" id="home">
       {/* <div className="container header__container"> */}
         <div className="profile-details">
           <span>
