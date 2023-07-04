@@ -1,0 +1,294 @@
+.projects .projects_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    padding: 2rem 0;
+}
+
+.project_filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .75rem;
+    margin-bottom: 2rem;
+    margin-top: 12px;
+}
+
+.project_item {
+    cursor: pointer;
+    color: var(--color-light);
+    padding: .25rem .75rem;
+    font-weight: 500;
+    /*font medium*/
+    border-radius: .5rem;
+}
+
+.project_card {
+    background-color: var(--color-light);
+    padding: 1.25rem;
+    border-radius: .5rem;
+    width: 315px;
+    min-height: 360px;
+    margin: 2rem;
+}
+
+.project_img {
+    /* border-radius: .5rem;
+    max-width: 100%; */
+    height: 274px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+    /* margin-bottom: 1rem; */
+}
+
+.project_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+
+.project_title {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    float: left;
+    clear: both;
+    color: var(--color-deepPink);
+    /* margin-bottom: 0.5rem; */
+}
+
+.project_button {
+    color: var(--color-deepPink);
+    font-size: medium;
+    cursor: pointer;
+    float: right;
+    clear: both;
+}
+
+.active-project {
+    background-color: var(--color-light);
+    color: black;
+}
+
+
+
+
+
+
+/* Portfolio PopUp */
+
+.portfolio_popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: grid;
+    /* justify-content: center; */
+    place-items: center;
+    justify-content: center;
+    /* padding: 0 1rem; */
+    z-index: var(--z-modal);
+    transition: .3s;
+    padding-left: 125px;
+
+    /* opacity: 0; */
+    /* visibility: hidden; */
+}
+
+
+.portfolio_popup-inner {
+    background-color: whitesmoke;
+
+    /* height: ; */
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.portfolio_popup-content {
+    display: flex;
+    /* align-items: center; */
+    column-gap: 2rem;
+    min-height: fit-content;
+    ;
+    max-width: 800px;
+}
+
+.portfolio_popup-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--color-deepPink);
+    cursor: pointer;
+}
+
+.portfolio_popup-img {
+    /* height: 340px; */
+    /* width: 84rem; */
+    margin: auto;
+}
+
+.portfolio_popup-img img {
+    display: block;
+    width: 20rem;
+    height: 25rem;
+    border-radius: 0.5rem;
+    border: 3px solid black;
+
+    /* height: 340px;
+    width: 340px; */
+}
+
+.portfolio_popup-subtitle {
+    text-align: center;
+}
+
+.portfolio_popup-subtitle .details_title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--color-deepPink);
+}
+
+.portfolio_popup-body {
+    margin-top: 50px;
+}
+
+.portfolio_popup-body .details_description {
+    font-size: 16px;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+    color: black;
+    font-weight: 300;
+    font-family: poppins, sans-serif;
+
+}
+
+
+.portfolio_popup-body .details_info li {
+    /* margin-bottom: var(--mb-0-75); */
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: var(--color-deepPink);
+}
+
+.portfolio_popup-body .details_info li span {
+    font-weight: normal;
+    color: black;
+}
+
+.buttonClickGithub {
+    border-radius: 10px;
+    height: 40px;
+    width: 110px;
+    /* margin-right: 40px; */
+    background-color: var(--color-deepPink);
+    margin: auto;
+    padding: 13px;
+    margin-top: 5.5rem;
+}
+
+.githubBtn {
+    color: var(--color-light);
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .portfolio_popup-inner {
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .portfolio_popup-content {
+        flex-direction: column;
+    }
+
+    .portfolio_popup-img {
+        margin: 1rem auto;
+    }
+
+    .portfolio_popup-img img {
+        width: 26rem;
+        height: 23rem;
+    }
+
+    .portfolio_popup-body {
+        margin-top: inherit;
+    }
+
+    .portfolio_popup-body .details_info {
+        position: inherit;
+    }
+
+    .portfolio_popup-subtitle .details_title {
+
+        margin-bottom: 22px;
+    }
+
+    .portfolio_popup-body .details_info li {
+        margin-bottom: 15px;
+    }
+
+    .buttonClickGithub {
+        margin-top: 0;
+    }
+
+    .portfolio_popup-inner {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .portfolio_popup {
+        padding-left: 0;
+    }
+
+    .portfolio_popup-img img {
+        width: 19rem;
+        height: 19rem;
+    }
+
+    .portfolio_popup-close {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    .project_card {
+        margin: 0.5rem;
+    }
+    .project_item {
+        padding: 0;
+    }
+    .portfolio_popup-img img {
+        width: 10rem;
+        height: 8rem;
+    }
+
+    .portfolio_popup-inner {
+        margin: 0.5rem;
+    }
+
+    .portfolio_popup-body .details_description {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .project_card {
+        width: 100%;
+    }
+}
