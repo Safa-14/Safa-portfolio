@@ -5,8 +5,8 @@ import skills from "../../skills";
 function About() {
   return (
     <section className='about' id='about'>
-      <h5 style={{'color': 'rgb(37, 25, 31)'}}>Get To Know</h5>
-      <h2 style={{'color': 'rgb(37, 25, 31)'}}>About Me</h2>
+      <h5>Get To Know</h5>
+      <h2>About Me</h2>
 
       <div className="about_container">
         <div className="about__content">

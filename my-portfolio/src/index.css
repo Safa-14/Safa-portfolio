@@ -64,7 +64,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: var(--color-bg);
+  /* background: var(--color-bg); */
   color: var(--color-white);
   overflow-x: hidden;
   padding-left: 125px;
@@ -74,12 +74,42 @@ section {
   padding: 1rem;
 }
 
+#light  {
+  background-color: var(--color-bg);
+  color: var(--color-white);
+}
+
+#dark{
+  background-color: rgb(47, 10, 31);
+  color: var(--color-bg);
+
+}
+/* #dark .navHeader {
+  background-color: rgba(248, 245, 245, 0.979);
+
+} */
+
+/* #light .navHeader {
+  background-color: black;
+
+} */
+
 h5,
 h2 {
     font-size: 45px;
     font-weight: 700;
     text-align: center;
     margin-top: 35px;
+}
+
+#light>section>h5,
+#light>section>h2  {
+  color:rgb(37, 25, 31);
+}
+
+#dark>section>h5,
+#dark>section>h2  {
+  color:rgb(217, 198, 207);
 }
 
 

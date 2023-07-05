@@ -29,7 +29,7 @@ function Projects() {
 
     return (
         <section className='projects' id='projects'>
-            <h5 style={{'color': 'rgb(37, 25, 31)'}}>My Projects</h5>
+            <h5>My Projects</h5>
             <div className="project_filters">
                 <span
                     className="project_item active-project"

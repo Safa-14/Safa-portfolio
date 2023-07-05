@@ -11,12 +11,14 @@
     align-items: center;
     /* justify-content: center; */
     /* flex-direction: column; */
-    background-color: rgba(248, 245, 245, 0.979);
     box-shadow: 0 4px 8px rgba(14, 1, 1, 0.959);
     flex-flow: column;
-    /* font-size: 2.5em; */
-    /* text-align: center; */
 }
+
+/* #light .navHeader{
+  background-color: rgba(14, 1, 1, 0.959);
+
+} */
 
 /*=======TOGGLE BUTTON PROPERTIES=======*/
 .nav-toggle {

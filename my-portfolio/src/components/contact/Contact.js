@@ -58,8 +58,8 @@ function Contact() {
     };
     return (
         <section className='contact' id='contact'>
-            <h5 style={{'color': 'rgb(37, 25, 31)'}}>Contact</h5>
-            <h2 style={{'color': 'rgb(37, 25, 31)'}}>Let's have a chat</h2>
+            <h5>Contact</h5>
+            <h2>Let's have a chat</h2>
             <div className="contact_container">
                 <div className="letter-content" id="form-wrap" onClick={ShowContactMessage}>
                     <div className={letter}>Be Free to write Me a Message!</div>
