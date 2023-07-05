@@ -1,0 +1,240 @@
+.about .about_container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center;  */
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: 6rem;
+}
+
+.about .about_container .about__content{
+    flex: 1 ;
+    /* padding: 2rem 1rem; */
+    /* padding-left: 6rem; */
+}
+
+.about .about_container .about__content>p {
+    /* margin: 2rem 0 1rem; */
+    color: var(--color-light);
+    /* color: #B8B8B8; */
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+    margin: 0 0 50px 19px;
+}
+
+.about .about_container .right_side{
+    flex: 1 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main_skills {
+    position: relative;
+    transform: skewY(-15deg);
+    bottom: 0;
+}
+
+
+.main_skills>li {
+    position: relative;
+    list-style: none;
+    width: 387px;
+    /*200*/
+    background: #f8d8ef;
+    padding: 1.5rem;
+    transition: 0.5s;
+    /*  z-index: calc(1*var(--i)); */
+}
+
+
+.main_skills>li:hover {
+    transform: translateX(-50px);
+    background: rgb(201, 153, 179);
+}
+
+.main_skills>li:hover .bar_container {
+    display: flex;
+}
+
+/* Bech na3mlou el bloc eli 3al lisar bel before */
+.main_skills>li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #f8d8ef;
+    filter: brightness(0.7);
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+
+
+.main_skills>li:hover::before {
+
+    background: rgb(201, 153, 179);
+    filter: brightness(0.7);
+}
+
+/* Bech na3mlou el bloc el fou9ani bel after */
+.main_skills>li::after {
+    content: '';
+    position: absolute;
+    bottom: 70px;
+    left: 1px;
+    width: 100%;
+    height: 40px;
+    background: #f8d8ef;
+    filter: brightness(0.9);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+.main_skills>li{
+    margin-bottom: 0;
+}
+
+.main_skills>li:hover::after {
+
+    background: rgb(201, 153, 179);
+    filter: brightness(0.9);
+}
+
+
+.main_skills>li:last-child::after {
+
+    box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/*les 3d skills bar graph pour les technologies */
+.bar_container {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 15px;
+    right: 2px;
+    justify-content: right;
+    align-items: center;
+    display: none;
+
+}
+
+
+.skill {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    font-size: 2rem;
+    margin: 5px;
+    border-radius: 15%;
+
+}
+
+.hoverIcon {
+    float: right; 
+    clear: both;
+    text-align: center;
+    border: 1px solid rgb(51, 4, 37);
+    border-radius: 50%;
+    font-size: 11px;
+    padding: 5px;
+    /* color: #ffffff; */
+    /* -webkit-text-fill-color: transparent; */
+    /* animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none; */
+}
+
+.hoverIcon p {
+    color: rgb(51, 4, 37);
+}
+
+.main_skills>li:hover .hoverIcon {
+    display: none;
+}
+
+.skillsName{
+    font-size: 20px;
+    color: rgb(139,10,80);
+  }
+
+  
+
+
+@media screen and (max-width: 1265px) {
+    .about .about_container {
+        flex-direction: column;
+    }
+
+    .about .about_container .right_side{
+        margin-top: 100px;
+    }
+
+    .about .about_container .about__content>p {
+        /* margin: 0 60px 40px 60px; */
+        /* margin: 20px 0; */
+    }
+
+    .main_skills {
+        margin-left: 40px;
+    }
+}
+
+
+@media screen and (max-width: 545px) {
+    .main_skills>li {
+        width: 346px;
+    }
+    .skill {
+        margin: 3px;
+        width: 29px;
+        height: 35px;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+.skill {
+    margin: 1px;
+    width: 25px;
+    height: 30px;
+}
+.main_skills>li {
+    width: 295px;
+}
+.skillsName{
+    font-size: inherit;
+  }
+
+  .main_skills>li {
+    width: 278px;
+}
+.main_skills>li::after {
+    bottom: 65px;
+    
+}
+}
+
+
+@media screen and (max-width: 336px) {
+    .about .about_container .about__content>p {
+        margin: inherit;
+    }
+
+    .main_skills {
+        margin-left: 30px;
+    }
+
+    .main_skills>li:hover {
+        transform: translateX(0px);
+    }
+}
+

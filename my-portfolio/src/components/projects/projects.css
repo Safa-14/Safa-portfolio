@@ -262,6 +262,9 @@
         top: 0.5rem;
         right: 0.5rem;
     }
+    .portfolio_popup-body .details_description {
+        margin-bottom: 1rem;
+    }
 }
 
 
