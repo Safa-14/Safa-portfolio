@@ -9,6 +9,7 @@
     width: 125px;
     display: flex;
     align-items: center;
+    background-color: white;
     /* justify-content: center; */
     /* flex-direction: column; */
     box-shadow: 0 4px 8px rgba(14, 1, 1, 0.959);
