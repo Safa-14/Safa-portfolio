@@ -56,7 +56,6 @@ function Projects() {
 
             <div className="projects_container">
                 {projects.map((project, index) => {
-                    //  console.log(project)
                     return (
 
                         <div

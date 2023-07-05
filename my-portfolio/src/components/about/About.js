@@ -9,6 +9,8 @@ function About() {
       <h2>About Me</h2>
 
       <div className="about_container">
+
+        {/* /* ============== LEFT SIDE : Informations about me ==============   */}
         <div className="about__content">
           <p>
             I am a junior full stack developer.
@@ -21,6 +23,7 @@ function About() {
           </p>
         </div>
 
+        {/* ============== RIGHT SIDE : Informations about my skills ==============   */}
         <div className="right_side">
           <ul className="main_skills">
             {skills.map((skill, index) => (
@@ -48,6 +51,7 @@ function About() {
 
           </ul>
         </div>
+
       </div>
 
     </section>

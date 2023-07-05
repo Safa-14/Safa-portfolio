@@ -1,12 +1,8 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext} from 'react'
 import { BsSun } from 'react-icons/bs';
 import { BiMoon } from 'react-icons/bi';
 import './toggle.css'
-// import { themeContext } from '../../Context';
-// import { useContext } from 'react';
 import { themeContext } from "../../Context";
-
-
 
 
 const Toggle = () => {
@@ -14,18 +10,18 @@ const Toggle = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
     const handleClick = () => {
-      // debugger
-      theme.dispatch({ type: "toggle" });
+        // debugger
+        theme.dispatch({ type: "toggle" });
     };
     return (
         <div className="toggle"
-         onClick={handleClick}
-         >
+            onClick={handleClick}
+        >
             <BiMoon />
             <BsSun />
 
             <div className="t-button"
-        style={darkMode ? { left: "2px" } : { right: "2px" }}
+                style={darkMode ? { left: "2px" } : { right: "2px" }}
             >
             </div>
 

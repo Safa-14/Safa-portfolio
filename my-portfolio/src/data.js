@@ -1,4 +1,4 @@
-// import Me from "../../assets/img/work.jpg";
+// I MADE AN ARRAY OF OBJECTS WHERE I PUT ALL THE DATA ABOUT EACH PROJECTS
 
  const projects = [
   {

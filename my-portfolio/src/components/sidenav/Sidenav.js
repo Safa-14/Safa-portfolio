@@ -38,10 +38,13 @@ function Sidenav() {
       </div>
 
       <div className={nav_header}>
+
+        {/* TOGGLE BUTTON : change the darkmode of the website */}
         <div className="nav-toggle">
           <Toggle />
         </div>
 
+        {/* MIDDLE PART : differents links to each part of the project */}
         <nav >
           <a
             href="# "
@@ -73,6 +76,7 @@ function Sidenav() {
           </a>
         </nav>
 
+        {/* SOCIAL MEDIA PART : linkedin and github links */}
         <ul>
           <li>
             <a href="https://www.linkedin.com/in/safa-bouhlel/">
@@ -85,13 +89,8 @@ function Sidenav() {
               <FaGithub />
             </a>
           </li>
-
-          {/* <li>
-            <a href="/" target="_blank">
-              <FaFacebook />
-            </a>
-          </li> */}
         </ul>
+
       </div>
 
     </div>

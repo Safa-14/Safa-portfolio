@@ -21,20 +21,14 @@ function Contact() {
             )
             .then(
                 (result) => {
-                    // console.log(result.text);
-                    // alert('Message successfully sent!')
                     showResult(true);
-                    // window.location.reload(false);
                 },
                 (error) => {
-                    // console.log(error.text);
                     showResult(false);
-                    // alert('Failed to send the message, please try again')
                 }
             );
 
         e.currentTarget.reset();
-        // showResult(true);
     };
 
     // hide result
@@ -45,26 +39,27 @@ function Contact() {
     const ShowContactMessage = (e) => {
         if (!isLetterClicked) {
             setLetterPosition("letter show");
-        //     e.currentTarget.firstChild.style.height = "150px";
-        // e.currentTarget.firstChild.style.top = "30px";
-          } else {
+        } else {
             setLetterPosition("letter hide");
-        //     e.currentTarget.firstChild.style.height = "150px";
-        // e.currentTarget.firstChild.style.top = "90px";
-          }
-          setIsLetterClicked(!isLetterClicked);
+        }
+        setIsLetterClicked(!isLetterClicked);
 
-        
+
     };
+
     return (
         <section className='contact' id='contact'>
             <h5>Contact</h5>
             <h2>Let's have a chat</h2>
+
             <div className="contact_container">
+                {/* ============== LEFT SIDE : letter animation ==============   */}
+
                 <div className="letter-content" id="form-wrap" onClick={ShowContactMessage}>
                     <div className={letter}>Be Free to write Me a Message!</div>
                 </div>
 
+                {/* ============== RIGHT SIDE : Contact form ==============   */}
                 <form ref={form} onSubmit={sendEmail}>
                     <input
                         type="text"

@@ -12,16 +12,15 @@ import { themeContext } from "./Context";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-console.log(darkMode);
+  console.log(darkMode);
   return (
-    <div 
-    id={ darkMode ? "dark" : "light"}
-  >
-    
+    <div
+      id={darkMode ? "dark" : "light"}
+    >
       <Nav />
       <Header />
       <About />
-      <Projects/>
+      <Projects />
       <Contact />
     </div>
   );
