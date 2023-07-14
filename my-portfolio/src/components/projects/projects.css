@@ -85,7 +85,7 @@
     display: grid;
     place-items: center;
     justify-content: center;
-    z-index: var(--z-modal);
+    z-index: 100;
     transition: .3s;
     padding-left: 125px;
 }
@@ -229,9 +229,18 @@
         padding-left: 0;
     }
 
+    .portfolio_popup-inner {
+        margin: 0 2rem;
+    } 
+
+    .portfolio_popup-img {
+        margin: inherit;
+    }
+
     .portfolio_popup-img img {
+        margin: inherit;
         width: 19rem;
-        height: 19rem;
+        height: 13rem;
     }
 
     .portfolio_popup-close {
@@ -240,6 +249,20 @@
     }
     .portfolio_popup-body .details_description {
         margin-bottom: 1rem;
+    }
+    .portfolio_popup-subtitle .details_title {
+
+        margin-bottom: 0;
+        margin-top: 9px;
+    }
+
+    .portfolio_popup-body .details_info li {
+        margin-bottom: 0;
+    }
+
+    .buttonClickGithub {
+        width: 100px;
+        padding: 9px;
     }
 }
 

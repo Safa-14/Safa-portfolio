@@ -42,7 +42,7 @@ const skills = [
     },
     {
       id: '1',
-      title: "Javascipts Frameworks",
+      title: "Javascipt Libraries",
       technolgiesUsed: [
                         <img src={react} alt="react" className='skill'/>,
                         <img src={redux} alt="redux" className='skill'/>,

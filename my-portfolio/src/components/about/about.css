@@ -194,9 +194,9 @@
 
 @media screen and (max-width: 400px){
 .skill {
-    margin: 1px;
-    width: 25px;
-    height: 30px;
+    margin: 2px;
+    width: 27px;
+    height: 32px;
 }
 .main_skills>li {
     width: 295px;
@@ -216,16 +216,24 @@
 
 
 @media screen and (max-width: 336px) {
-    .about .about_container .about__content>p {
+    /* .about .about_container .about__content>p {
         margin: inherit;
-    }
+    } */
 
     .main_skills {
         margin-left: 30px;
     }
 
+    .main_skills>li {
+        width: 240px;
+    }
+
     .main_skills>li:hover {
         transform: translateX(0px);
+    }
+
+    .skill {
+        width: 20px;
     }
 }
 
